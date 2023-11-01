@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.16/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="flex flex-col items-center h-screen bg-gray-50">
+
+    <!-- Navigation Menu -->   
+    <nav class="bg-blue-500 p-3 shadow-lg w-full">
+        <ul class="flex justify-center space-x-4">
+            <li><a href="#" class="text-white">Home</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="flex flex-grow flex-col w-full mx-auto">
+        
+        <!-- Form Card -->
+        <div class="bg-white rounded-lg shadow-lg p-6 w-full flex items-center justify-center">
+            <form id="my-form" class="space-y-4 w-3/4 mx-auto">
+                <input id="my-input" class="w-full py-2 border rounded text-center" type="text" placeholder="Enter text here">
+                <button id="my-button" class="relative w-full p-2 text-white bg-blue-500 rounded">
+                    <span id="button-text">Submit</span>
+                    <div id="spinner" class="hidden absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                        <div class="border-t-2 border-b-2 border-blue-200 rounded-full animate-spin w-6 h-6"></div>
+                    </div>
+                </button>
+
+            </form>
+        </div>
+
+
+        <!-- Image Response Card -->
+        <div id="response-image-container" class="hidden bg-white rounded-lg shadow-lg p-6 w-1/2 mx-auto">
+            <img id="response-image" class="w-full h-auto mt-4 mx-auto" src="" alt="Response Image" />
+        </div>
+    </div>
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
